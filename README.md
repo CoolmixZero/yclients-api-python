@@ -5,7 +5,7 @@
 
 - This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
 
-- The code added `httpx >= requests` package to send requests into **YCLIENTS API** and `ujson >= json` package 
+- The code added `httpx ⬅️ requests` package to send requests into **YCLIENTS API** and `ujson ⬅️ json` package 
 > `ujson` and `httpx` **faster** than `json` and `requests`
 
 - An example of using library also implemented in the example.py file to copy.
