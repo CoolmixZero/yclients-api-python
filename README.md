@@ -45,7 +45,7 @@
 ```
 - ### Get booking dates
 ```python
-    booking_days = api.get_available_days(staff_id=staff_id, service_id=service_id):
+    booking_days = api.get_available_days(staff_id=staff_id, service_id=service_id)
     print(booking_days)
 
     day = booking_days['data'].get('booking_dates')  # or .get('booking_days')
