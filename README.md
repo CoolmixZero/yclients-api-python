@@ -94,11 +94,11 @@
 ```python
     df = api.parse_clients_data(clients_data_list)
 ```  
-- ### Show id, name and number of visits for all clients
+- ### Show ID, name and number of visits for all clients
 ```python
     print(df[['id', 'name', 'visits']])
 ```
-- ### Clients ids list
+- ### Clients IDs list
 ```python
     all_clients_ids = list(df['id'])
 ```
