@@ -44,7 +44,7 @@ ____
 <details>
 <summary>Output ...</summary>
     
-```json
+```python
     {
       "success": true,
       "data": [
