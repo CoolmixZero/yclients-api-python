@@ -1,13 +1,13 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 # YCLIENTS API on PYTHON
 
-Python Yclients API wrapper with ujson and httpx packages.
+*Python YCLIENTS API wrapper with ujson and httpx packages*
 
 This is an updated version of this project: https://github.com/Stayermax/Python-Yclients-API
 
 The code added 'httpx' to send requests into YCLIENTS API and 'ujson' package (because ujson and httpx faster than json and requests)
 
-Please note that sending requests to get customer data can take time, especially if your database is quite large, since Yclients API can return only 200 results at once. Also if sending one request takes more than a few seconds, you may need to connect to another Internet network.
+> Please note that sending requests to get customer data can take time, especially if your database is quite large, since Yclients API can return only 200 results at once. Also if sending one request takes more than a few seconds, you may need to connect to another Internet network.
 
 # Example:
 
