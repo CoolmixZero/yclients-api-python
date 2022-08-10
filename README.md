@@ -17,14 +17,14 @@ ____
 # Usage:
 ## Create API object
 ```python
-    from yclients import YClientsAPI
-    
+from yclients import YClientsAPI
 
-    TOKEN = "your token"
-    СID = 'your company id'
-    FID = 'form id'
 
-    api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID, debug=True)
+TOKEN = "your token"
+СID = 'your company id'
+FID = 'form id'
+
+api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID, debug=True)
 ```
 ## Show debugging process
 ```python
