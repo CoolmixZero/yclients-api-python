@@ -69,7 +69,7 @@
                                comment='some comment')
 ```
 ## User commands:
-- ### Get USER TOKEN from the system.
+- ### Get USER TOKEN from the system
 > You can save this TOKEN (like BEARER TOKEN) and there is no need to update it every time
 ```python
     login = "example@gmail.com"
