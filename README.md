@@ -446,14 +446,310 @@ password = "password"
 
 user_token = api.get_user_token(login, password)
 ```
+
+____
+
+<details>
+<summary>Output ...</summary>
+    
+```json
+{
+  "id": 123456,
+  "user_token": "wec23fh8cDfFV4432fc352456",
+  "name": "Иван Попов",
+  "phone": "79161001010",
+  "login": "79161001010",
+  "email": "test@test.com",
+  "avatar": "https://assets.yclients.com/general/0/01/123456789098765_12345678909876.png"
+}
+```
+    
+</details>
+
+____
+
 - ### Update autorisation parameters of the API class with USER TOKEN
 ```python
 api.update_user_token(user_token)
 ```
+
+____
+
+<details>
+<summary>Output ...</summary>
+    
+```json
+{
+  "success": true,
+  "data": {
+    "user_token": "4de9d8cc108c0"
+  },
+  "meta": []
+}
+```
+    
+</details>
+
+____
+
 - ### Shows USER permissions
 ```python
 api.show_user_permissions()
 ```
+
+____
+
+<details>
+<summary>Output ...</summary>
+    
+```json
+{
+  "success": true,
+  "data": {
+    "timetable": {
+      "timetable_access": true,
+      "master_id": 1000238,
+      "position_id": 0,
+      "last_days_count": 1000,
+      "schedule_edit_access": true,
+      "timetable_phones_access": true,
+      "timetable_transferring_record_access": true,
+      "timetable_statistics_access": true
+    },
+    "record_form": {
+      "record_form_access": true,
+      "record_form_client_access": true,
+      "records_autocomplete_access": true,
+      "create_records_access": true,
+      "edit_records_access": true,
+      "edit_records_attendance_access": true,
+      "records_services_cost_access": true,
+      "records_services_discount_access": true,
+      "record_edit_full_paid_access": true,
+      "delete_records_access": true,
+      "delete_customer_came_records_access": true,
+      "delete_paid_records_access": true,
+      "records_goods_access": true,
+      "records_goods_create_transaction_access": true,
+      "records_goods_create_last_days_count": -1,
+      "records_goods_edit_transaction_access": true,
+      "records_goods_edit_last_days_count": -1,
+      "records_goods_cost_access": true,
+      "records_goods_discount_access": true,
+      "records_finances_access": true,
+      "records_finances_last_days_count": -1,
+      "records_finances_pay_from_deposits_access": true,
+      "records_group_id_access": true,
+      "records_group_id": 134178
+    },
+    "finances": {
+      "finances_access": true,
+      "finances_accounts_ids": [],
+      "finances_transactions_access": true,
+      "finances_last_days_count": -1,
+      "finances_create_transactions_access": true,
+      "finances_create_last_days_count": -1,
+      "finances_edit_transactions_access": true,
+      "finances_edit_last_days_count": -1,
+      "finances_delete_transactions_access": true,
+      "finances_transactions_excel_access": true,
+      "finances_expenses_ids": [],
+      "finances_accounts_access": true,
+      "finances_accounts_banalce_access": true,
+      "finances_suppliers_read_access": true,
+      "finances_suppliers_create_access": true,
+      "finances_suppliers_update_access": true,
+      "finances_suppliers_delete_access": true,
+      "finances_suppliers_excel_access": true,
+      "finances_expenses_read_access": true,
+      "expenses_read_access": true,
+      "finances_expenses_create_access": true,
+      "expenses_create_access": true,
+      "finances_expenses_update_access": true,
+      "expenses_update_access": true,
+      "finances_expenses_delete_access": true,
+      "expenses_delete_access": true,
+      "finances_kkm_transactions_access": true,
+      "kkm_transactions_accounts_access": true,
+      "finances_kkm_settings_read_access": true,
+      "kkm_settings_reed_access": true,
+      "finances_kkm_settings_update_access": true,
+      "kkm_settings_update_access": true,
+      "finances_settings_invoicing_read_access": true,
+      "settings_invoicing_read_access": true,
+      "finances_settings_invoicing_update_access": true,
+      "settings_invoicing_update_access": true,
+      "finances_options_read_access": true,
+      "options_read_access": true,
+      "finances_options_update_access": true,
+      "options_update_access": true,
+      "finances_salary_schemes_access": true,
+      "finances_salary_calc_access": true,
+      "finances_salary_not_limitation_today_access": true,
+      "finances_payroll_calculation_create_access": true,
+      "finances_payroll_calculation_create_not_limitation_today_access": true,
+      "finances_salary_access_master_checkbox": true,
+      "finances_salary_access_master_id": 1000237,
+      "get_salary_access_master_id": 1000237,
+      "finances_salary_master_not_limitation_today_access": true,
+      "finances_payroll_calculation_create_by_master_access": true,
+      "calculation_create_by_master_not_limitation_today_access": true,
+      "finances_period_report_access": true,
+      "finances_period_report_excel_access": true,
+      "finances_year_report_access": true,
+      "finances_year_report_excel_access": true,
+      "finances_print_check_access": true,
+      "finances_z_report_access": true,
+      "finances_z_report_no_limit_today_access": true,
+      "finances_z_report_excel_access": true
+    },
+    "clients": {
+      "clients_access": true,
+      "client_phones_access": true,
+      "clients_phones_email_access": true,
+      "clients_card_phone_access": true,
+      "clients_delete_access": true,
+      "clients_excel_access": true,
+      "excel_access": true,
+      "client_comments_list_access": true,
+      "client_comments_add_access": true,
+      "client_comments_own_edit_access": true,
+      "client_comments_other_edit_access": true,
+      "client_files_list_access": true,
+      "client_files_upload_access": true,
+      "client_files_delete_access": true,
+      "clients_visit_master_id": 0,
+      "get_visit_master_id": 0
+    },
+    "dashboard": {
+      "dashboard_access": true,
+      "dash_access": true,
+      "dash_phones_access": true,
+      "dash_records_access": true,
+      "dash_records_last_days_count": -1,
+      "dash_records_excel_access": true,
+      "dash_records_phones_access": true,
+      "dash_message_access": true,
+      "dash_message_excel_access": true,
+      "dash_message_phones_access": true,
+      "dash_reviews_access": true,
+      "dash_reviews_delete_access": true,
+      "dashboard_calls_access": true,
+      "dashboard_calls_excel_access": true,
+      "dashboard_calls_phones_access": true
+    },
+    "notification": {
+      "notification": true,
+      "web_push": true,
+      "web_phone_push": true,
+      "notification_sms_ending_license": true,
+      "notification_sms_low_balance": true,
+      "notification_email_ending_license": true
+    },
+    "loyalty": {
+      "loyalty_access": true,
+      "has_loyalty_access": true,
+      "loyalty_cards_manual_transactions_access": true,
+      "has_loyalty_cards_manual_transactions_access": true,
+      "loyalty_certificate_and_abonement_manual_transactions_access": true
+    },
+    "storages": {
+      "storages_access": true,
+      "storages_ids": [],
+      "storages_transactions_access": true,
+      "storages_last_days_count": -1,
+      "storages_move_goods_access": true,
+      "storages_create_transactions_access": true,
+      "storages_create_last_days_count": -1,
+      "storages_create_transactions_buy_access": true,
+      "storages_create_transactions_sale_access": true,
+      "storages_edit_transactions_access": true,
+      "storages_edit_last_days_count": -1,
+      "storages_edit_transactions_buy_access": true,
+      "storages_edit_transactions_sale_access": true,
+      "storages_delete_transactions_access": true,
+      "storages_transactions_excel_access": true,
+      "storages_transactions_types": [],
+      "storages_inventory_access": true,
+      "storages_inventory_create_edit_access": true,
+      "storages_inventory_delete_access": true,
+      "storages_inventory_excel_access": true,
+      "storages_remnants_report_access": true,
+      "storages_remnants_report_excel_access": true,
+      "storages_sales_report_access": true,
+      "storages_sales_report_excel_access": true,
+      "storages_consumable_report_access": true,
+      "storages_consumable_report_excel_access": true,
+      "storages_write_off_report_access": true,
+      "storages_write_off_report_excel_access": true,
+      "storages_turnover_report_access": true,
+      "storages_turnover_report_excel_access": true,
+      "storages_goods_crud_access": true,
+      "storages_goods_create_access": true,
+      "storages_goods_update_access": true,
+      "storages_goods_title_edit_access": true,
+      "storages_goods_category_edit_access": true,
+      "storages_goods_selling_price_edit_access": true,
+      "storages_goods_cost_price_edit_access": true,
+      "storages_goods_units_edit_access": true,
+      "storages_goods_critical_balance_edit_access": true,
+      "storages_goods_masses_edit_access": true,
+      "storages_goods_comment_edit_access": true,
+      "storages_goods_archive_access": true,
+      "storages_goods_delete_access": true
+    },
+    "settings": {
+      "settings_access": true,
+      "settings_basis_access": true,
+      "settings_information_access": true,
+      "users_access": true,
+      "delete_users_access": true,
+      "create_users_access": true,
+      "edit_users_access": true,
+      "limited_users_access": false,
+      "settings_services_access": true,
+      "settings_services_create_access": true,
+      "services_edit": true,
+      "settings_services_edit_title_access": true,
+      "settings_services_relation_category_access": true,
+      "settings_services_edit_price_access": true,
+      "settings_services_edit_image_access": true,
+      "settings_services_edit_online_seance_date_time_access": true,
+      "settings_services_edit_online_pay_access": true,
+      "settings_services_edit_services_related_resource_access": true,
+      "settings_positions_read": true,
+      "settings_positions_create": true,
+      "settings_positions_delete": true,
+      "edit_master_service_and_duration": true,
+      "tech_card_edit": true,
+      "services_delete": true,
+      "settings_master_access": true,
+      "master_create": true,
+      "master_edit": true,
+      "master_delete": true,
+      "settings_master_dismiss_access": true,
+      "schedule_edit": true,
+      "settings_notifications_access": true,
+      "settings_email_notifications_access": true,
+      "settings_template_notifications_access": true,
+      "webhook_read_access": true
+    },
+    "other": {
+      "stat_access": true,
+      "billing_access": true,
+      "send_sms": true,
+      "auth_enable_check_ip": false,
+      "auth_list_allowed_ip": []
+    }
+  },
+  "meta": []
+}
+```
+    
+</details>
+
+____
+
 ## Client commands:
 - ### Get clients list
 ```python
