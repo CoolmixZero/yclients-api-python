@@ -102,6 +102,7 @@
 ```python
     all_clients_ids = list(df['id'])
 ```
+## Visits commands:
 - ### Show all visits for client with Client_ID
 ```python
     cid = 20419758
