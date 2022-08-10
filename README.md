@@ -26,10 +26,6 @@ ____
 
     api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID, debug=True)
 ```
-<details>
-<summary>Подробнее ...</summary>
-Тут текст который вы хотим скрыть
-</details>
 ## Show debugging process
 ```python
     api.show_debugging()
@@ -42,6 +38,52 @@ ____
 
     staff_id = all_staff['data'].get('id')
 ```
+
+<details>
+<summary>Output ...</summary>
+```json
+    {
+      "success": true,
+      "data": [
+        {
+          "id": "16",
+          "name": "Вася",
+          "bookable": true,
+          "specialization": "Фельдшер",
+          "position": {
+            "id": 1,
+            "title": "Администратор"
+          },
+          "show_rating": "1",
+          "rating": "3",
+          "votes_count": "1",
+          "avatar": "https://yclients.com/images/no-master.png",
+          "comments_count": "0",
+          "weight": "11",
+          "information": "<span></span>",
+          "seance_date": 1443139200,
+          "seances": []
+        },
+        {
+          "id": "32",
+          "name": "Петя",
+          "bookable": false,
+          "specialization": "Терапевт",
+          "position": [],
+          "show_rating": "1",
+          "rating": "4",
+          "votes_count": "1",
+          "avatar": "https://yclients.com/images/no-master.png",
+          "comments_count": "0",
+          "weight": "8",
+          "information": "<span></span>"
+        }
+      ],
+      "meta": []
+    }
+```
+</details>
+
 - ### Get services info
 ```python
     services = api.get_services(staff_id=staff_id)
