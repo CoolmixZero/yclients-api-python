@@ -6,7 +6,7 @@
 - This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
 
 - The code changed `httpx ⟵ requests` and `ujson ⟵ json` packages
-> `ujson` and `httpx` **faster** than `json` and `requests`
+>> `ujson` and `httpx` **faster** than `json` and `requests`
 
 - An example of using library also implemented in the example.py file to copy.
 
