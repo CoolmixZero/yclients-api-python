@@ -48,14 +48,14 @@ The code added `httpx` package to send requests into **YCLIENTS API** and `ujson
 
     day = booking_days['data'].get('booking_dates')  # or .get('booking_days')
 ```
-### Get booking times
+- ### Get booking times
 ```python
     time_slots = api.get_available_times(staff_id=staff_id, service_id=service_id, day=day)
     print(time_slots)
 
     date_time = time_slots['data'].get('time')  # or .get('datetime')
 ```
-### Book
+- ### Book
 ```python
     booked, message = api.book(booking_id=0, 
                                fullname='my name', 
@@ -66,7 +66,8 @@ The code added `httpx` package to send requests into **YCLIENTS API** and `ujson
                                staff_id=staff_id, 
                                comment='some comment')
 ```
-## Get user token from the system.
+## Client commands:
+- ### Get user token from the system.
 > You can save this token (like bearer token) and there is no need to update it every time
 ```python
     login = "example@gmail.com"
@@ -74,57 +75,57 @@ The code added `httpx` package to send requests into **YCLIENTS API** and `ujson
     
     user_token = api.get_user_token(login, password)
 ```
-## Update autorisation parameters of the api class with user token
+- ### Update autorisation parameters of the api class with user token
 ```python
     api.update_user_token(user_token)
 ```
-## Shows user permissions
+- ### Shows user permissions
 ```python
     api.show_user_permissions()
 ```
-## Get clients list
+- ### Get clients list
 ```python
     clients_data_list = api.get_clients_data()
 ```
-## Parse clients data
+- ### Parse clients data
 ```python
     df = api.parse_clients_data(clients_data_list)
 ```  
-## Show id, name and number of visits for all clients
+- ### Show id, name and number of visits for all clients
 ```python
     print(df[['id', 'name', 'visits']])
 ```
-## Clients ids list
+- ### Clients ids list
 ```python
     all_clients_ids = list(df['id'])
 ```
-## Show all visits for client with cid
+- ### Show all visits for client with cid
 ```python
     cid = 20419758
     client_visits = api.get_visits_for_client(cid)
     print(f'Client {cid} visits')
     print(f'{pd.DataFrame(client_visits)}')
 ```
-## Show all visits for all clients
+- ### Show all visits for all clients
 ```python
     all_clients_visits = api.get_visits_data_for_clients_list(all_clients_ids)
     for cid in all_clients_visits.keys():
         print(f'Client {cid} visits')
         print(f'{pd.DataFrame(all_clients_visits[cid])}')
 ```
-## Show all attended visits for client with cid
+- ### Show all attended visits for client with cid
 ```python
     cid = 20419758
     client_visits = api.get_attended_visits_for_client(cid)
     print(f'Client {cid} attended visits')
     print(f'{pd.DataFrame(client_visits)}')
 ```
-## show attended visits information for clients:
+- ### show attended visits information for clients:
 ```python
     df = api.get_attended_visits_dates_information(all_clients_ids)
     print(f'Attended visits dataframe: {df}')
 ```
-## show attended visits information for clients with at least one visit:
+- ### show attended visits information for clients with at least one visit:
 ```python
     print(f"Attended visits ndataframe with no gaps {df[df['visits_number']>0]}")
 ```
