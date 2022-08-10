@@ -15,11 +15,11 @@ The code added 'httpx' to send requests into YCLIENTS API and 'ujson' package (b
     import pandas as pd
 
 
-    TOKEN = "your_token"
-    Сompany_ID = 'your_company_id'
-    Form_ID = 'form id'
+    TOKEN = "your token"
+    СID = 'your company id'
+    FID = 'form id'
 
-    api = YClientsAPI(token=TOKEN, company_id=Сompany_ID, form_id=Form_id, debug=True)
+    api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID, debug=True)
                         
     login = "example@gmail.com"
     password = "password"
