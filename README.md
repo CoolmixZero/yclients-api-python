@@ -39,12 +39,12 @@ ____
     staff_id = all_staff['data'].get('id')
 ```
 
----
+____
 
 <details>
 <summary>Output ...</summary>
     
-```python
+```json
     {
       "success": true,
       "data": [
@@ -88,7 +88,7 @@ ____
     
 </details>
 
----
+____
 
 - ### Get services info
 ```python
@@ -97,6 +97,74 @@ ____
 
     service_id = services['data']['services'].get('id')
 ```
+
+____
+
+<details>
+<summary>Output ...</summary>
+    
+```json
+    {
+  "success": true,
+  "data": {
+    "events": [],
+    "services": [
+      {
+        "id": 1896208,
+        "title": "Мытье волос",
+        "category_id": 1895571,
+        "price_min": 0,
+        "price_max": 0,
+        "discount": 0,
+        "comment": "",
+        "weight": 0,
+        "active": 0,
+        "sex": 0,
+        "image": "",
+        "prepaid": "forbidden",
+        "seance_length": 3600
+      },
+      {
+        "id": 1896303,
+        "title": "Окрашивание",
+        "category_id": 1895574,
+        "price_min": 0,
+        "price_max": 0,
+        "discount": 0,
+        "comment": "",
+        "weight": 0,
+        "active": 0,
+        "sex": 0,
+        "image": "",
+        "prepaid": "forbidden",
+        "seance_length": 3600
+      }
+    ],
+    "category": [
+      {
+        "id": 1895571,
+        "title": "Уходы для волос",
+        "sex": 0,
+        "api_id": 0,
+        "weight": 60
+      },
+      {
+        "id": 1895574,
+        "title": "Окрашивание волос",
+        "sex": 0,
+        "api_id": 0,
+        "weight": 7
+      }
+    ]
+  },
+  "meta": []
+}
+```
+    
+</details>
+
+____
+
 - ### Get booking dates
 ```python
     booking_days = api.get_available_days(staff_id=staff_id, service_id=service_id)
