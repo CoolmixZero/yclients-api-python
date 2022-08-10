@@ -183,7 +183,6 @@ class YClientsAPI:
                'paid', 'balance', 'importance_id', 'importance',
                 'categories', 'last_change_date', 'custom_fields'
         """
-        # Session object sends requests faster
         session = httpx.Client(trust_env=False)
         # In the first request we obtain total number of clients in system
         first_request = self.__get_clients_page(1, session, clients_per_page)
@@ -280,7 +279,6 @@ class YClientsAPI:
             Parameters description is  accesible via:
             https://github.com/petroff/api-blueprint/blob/master/apiary.apib
         """
-        # Session object sends requests faster
         if session is None:
             session = httpx.Client(trust_env=False)
 
@@ -317,7 +315,6 @@ class YClientsAPI:
         :param visits_per_page: size of the page
         :return: dictionary with client id as key and list of visits as value
         """
-        # Session object sends requests faster
         session = httpx.Client(trust_env=False)
 
         clients_visits_dictionary = {}
