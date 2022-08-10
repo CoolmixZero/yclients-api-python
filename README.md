@@ -3,30 +3,23 @@
 
 **Python YCLIENTS API wrapper with ujson and httpx packages**
 
-This is an updated version of this project: https://github.com/Stayermax/Python-Yclients-API
+This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
 
-The code added 'httpx' to send requests into YCLIENTS API and 'ujson' package (because ujson and httpx faster than json and requests)
+The code added 'httpx' to send requests into **YCLIENTS API** and 'ujson' package (because ujson and httpx faster than json and requests)
 
 > Please note that sending requests to get customer data can take time, especially if your database is quite large, since Yclients API can return only 200 results at once. Also if sending one request takes more than a few seconds, you may need to connect to another Internet network.
 
 # Example:
+## Create api object
 ```python
     from yclients import YClientsAPI
-    import pandas as pd
-
+    
 
     TOKEN = "your token"
     СID = 'your company id'
     FID = 'form id'
 
     api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID, debug=True)
-                        
-    login = "example@gmail.com"
-    password = "password"
-```    
-## Create api object
-```python
-    api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID)
 ```
 ## Show debugging process
 ```python
@@ -72,10 +65,12 @@ The code added 'httpx' to send requests into YCLIENTS API and 'ujson' package (b
                                staff_id=staff_id, 
                                comment='some comment')
 ```
-## Get user token from the system
-## You can save this token (like bearer token)
-##   and there is no need to update it every time
+## Get user token from the system.
+> You can save this token (like bearer token) and there is no need to update it every time
 ```python
+    login = "example@gmail.com"
+    password = "password"
+    
     user_token = api.get_user_token(login, password)
 ```
 ## Update autorisation parameters of the api class with user token
