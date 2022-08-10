@@ -41,6 +41,7 @@ ____
 
 <details>
 <summary>Output ...</summary>
+    
 ```json
     {
       "success": true,
@@ -82,6 +83,7 @@ ____
       "meta": []
     }
 ```
+    
 </details>
 
 - ### Get services info
