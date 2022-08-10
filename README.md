@@ -381,6 +381,62 @@ booked, message = api.book(booking_id=0,
                            staff_id=staff_id, 
                            comment='some comment')
 ```
+
+____
+
+<details>
+<summary>Output ...</summary>
+    
+```json
+{
+  "phone": "79000000000",
+  "fullname": "ДИМА",
+  "email": "d@yclients.com",
+  "code": "38829",
+  "comment": "тестовая запись!",
+  "type": "mobile",
+  "notify_by_sms": 6,
+  "notify_by_email": 24,
+  "api_id": "777",
+  "appointments": [
+    {
+      "id": 1,
+      "services": [
+        331
+      ],
+      "staff_id": 6544,
+      "datetime": 1443517200,
+      "custom_fields": {
+        "my_custom_field": 123,
+        "some_another_field": [
+          "first value",
+          "next value"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "services": [
+        99055
+      ],
+      "staff_id": 6544,
+      "datetime": 1443614400,
+      "custom_fields": {
+        "my_custom_field": 456,
+        "some_another_field": [
+          "next value",
+          "last value"
+        ]
+      }
+    }
+  ]
+}
+```
+    
+</details>
+
+____
+
 ## User commands:
 - ### Get USER TOKEN from the system
 > You can save this TOKEN (like BEARER TOKEN) and there is no need to update it every time
