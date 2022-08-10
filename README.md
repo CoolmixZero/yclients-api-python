@@ -27,21 +27,21 @@ The code added `httpx` package to send requests into **YCLIENTS API** and `ujson
     api.show_debugging()
 ```
 ## Booking commands:
-### Get staff info
+- ### Get staff info
 ```python
     all_staff = api.get_staff()
     print(all_staff)
 
     staff_id = all_staff['data'].get('id')
 ```
-### Get services info
+- ### Get services info
 ```python
     services = api.get_services(staff_id=staff_id)
     print(services)
 
     service_id = services['data']['services'].get('id')
 ```
-### Get booking dates
+- ### Get booking dates
 ```python
     booking_days = api.get_available_days(staff_id=staff_id, service_id=service_id):
     print(booking_days)
