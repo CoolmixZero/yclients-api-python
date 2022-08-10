@@ -26,7 +26,7 @@ The code added `httpx` package to send requests into **YCLIENTS API** and `ujson
 ```python
     api.show_debugging()
 ```
-## Booking commands
+## Booking commands:
 ### Get staff info
 ```python
     all_staff = api.get_staff()
