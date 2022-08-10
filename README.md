@@ -1,14 +1,14 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-# YCLIENTS API on PYTHON
+# YCLIENTS API on PYTHON 3.7+
 
-### **Python [YCLIENTS API WRAPPER](https://github.com/CoolmixZero/yclients-api-python/blob/main/yclients.py "Opens yclients.py") with [ujson](https://pypi.org/project/ujson/ "Opens ujson documentation") and [httpx](https://www.python-httpx.org/ "Opens httpx documentation") packages:**
+### **Python 3.7+ [YCLIENTS API WRAPPER](https://github.com/CoolmixZero/yclients-api-python/blob/main/yclients.py "Opens yclients.py") with [ujson](https://pypi.org/project/ujson/ "Opens ujson documentation") and [httpx](https://www.python-httpx.org/ "Opens httpx documentation") packages:**
 
 - This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
 
 - The code changed `httpx ⟵ requests` and `ujson ⟵ json` packages.
 > `ujson` and `httpx` **faster** than `json` and `requests`
 
-- An example of using library also implemented in the example.py file to copy.
+- An example of using library also implemented in the [example.py](https://github.com/CoolmixZero/yclients-api-python/blob/main/example.py "Opens example.py") file to copy.
 
 > Please note that sending requests to get customer data can take time, especially if your database is quite large, since Yclients API can return only 200 results at once. Also if sending one request takes more than a few seconds, you may need to connect to another Internet network.
 
