@@ -26,6 +26,10 @@ ____
 
     api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID, debug=True)
 ```
+<details>
+<summary>Подробнее ...</summary>
+Тут текст который вы хотим скрыть
+</details>
 ## Show debugging process
 ```python
     api.show_debugging()
