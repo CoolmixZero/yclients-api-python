@@ -12,7 +12,9 @@ if __name__ == '__main__':
     # Show debugging process
     api.show_debugging()
     
+    
     """ BOOKING """
+        
     # Get staff info
     all_staff = api.get_staff()
     print(all_staff)
@@ -47,7 +49,9 @@ if __name__ == '__main__':
                            staff_id=staff_id, 
                            comment='some comment')
    
+  
     """ USER """
+        
     # Get USER TOKEN from the system.
     login = "example@gmail.com"
     password = "password"
@@ -59,7 +63,9 @@ if __name__ == '__main__':
     # Shows USER permissions
     api.show_user_permissions()
     
+    
     """ CLIENT """
+    
     # Get clients list
     clients_data_list = api.get_clients_data()
     
@@ -72,7 +78,9 @@ if __name__ == '__main__':
     # Clients IDs list
     all_clients_ids = list(df['id'])
     
+    
     """ VISITS """
+    
     # Show all visits for client with Client_ID
     cid = 20419758
     client_visits = api.get_visits_for_client(cid)
