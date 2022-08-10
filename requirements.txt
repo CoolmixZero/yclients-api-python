@@ -4,4 +4,4 @@ httpx
 ujson
 time
 datetime
-pandas >= 1.0.0
+pandas >= 1.0.
