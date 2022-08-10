@@ -104,4 +104,4 @@ if __name__ == '__main__':
     print(f'Attended visits dataframe: {df}')
     
     # Show attended visits information for clients with at least one visit:
-    print(f"Attended visits ndataframe with no gaps {df[df['visits_number']>0]}")
+    print(f"Attended visits ndataframe with no gaps {df[df['visits_number']>0]}"
