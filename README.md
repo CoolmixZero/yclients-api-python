@@ -8,6 +8,8 @@ This is an **updated version** of this project: https://github.com/Stayermax/Pyt
 The code added `httpx >= requests` package to send requests into **YCLIENTS API** and `ujson >= json` package 
 > `ujson` and `httpx` **faster** than `json` and `requests`
 
+An example of using library also implemented in the example.py file to copy.
+
 > Please note that sending requests to get customer data can take time, especially if your database is quite large, since Yclients API can return only 200 results at once. Also if sending one request takes more than a few seconds, you may need to connect to another Internet network.
 
 # Example:
