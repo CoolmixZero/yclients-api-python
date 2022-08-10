@@ -1,5 +1,5 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-# YCLIENTS API ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7-blue) 
+# YCLIENTS API ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7+-blue) 
 
 ### **Python [YCLIENTS API WRAPPER](https://github.com/CoolmixZero/yclients-api-python/blob/main/yclients.py "Opens yclients.py") with [ujson](https://pypi.org/project/ujson/ "Opens ujson documentation") and [httpx](https://www.python-httpx.org/ "Opens httpx documentation") packages:**
 
