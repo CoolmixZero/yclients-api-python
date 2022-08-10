@@ -8,7 +8,7 @@ The code added 'httpx' to send requests into YCLIENTS API and 'ujson' package (b
 Please note that sending requests to get customer data can take time, especially if your database is quite large, since Yclients API can return only 200 results at once. Also if sending one request takes more than a few seconds, you may need to connect to another Internet network.
 
 # Example:
-
+`
 from yclients import YClientsAPI
 import pandas as pd
 
@@ -21,7 +21,7 @@ api = YClientsAPI(token='your-token', company_id='company id', form_id='form id'
                         
 login = "example@gmail.com"
 password = "password"
-
+`
 ## Create api object
 api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID)
 
