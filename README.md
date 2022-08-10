@@ -6,12 +6,12 @@
 This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
 
 The code added `httpx` package to send requests into **YCLIENTS API** and `ujson` package 
-> `ujson` and `httpx` faster than `json` and `requests`
+> `ujson` and `httpx` **faster** than `json` and `requests`
 
 > Please note that sending requests to get customer data can take time, especially if your database is quite large, since Yclients API can return only 200 results at once. Also if sending one request takes more than a few seconds, you may need to connect to another Internet network.
 
 # Example:
-## Create api object
+## Create API object
 ```python
     from yclients import YClientsAPI
     
@@ -66,23 +66,24 @@ The code added `httpx` package to send requests into **YCLIENTS API** and `ujson
                                staff_id=staff_id, 
                                comment='some comment')
 ```
-## Client commands:
-- ### Get user token from the system.
-> You can save this token (like bearer token) and there is no need to update it every time
+## User commands:
+- ### Get USER TOKEN from the system.
+> You can save this TOKEN (like BEARER TOKEN) and there is no need to update it every time
 ```python
     login = "example@gmail.com"
     password = "password"
     
     user_token = api.get_user_token(login, password)
 ```
-- ### Update autorisation parameters of the api class with user token
+- ### Update autorisation parameters of the API class with USER TOKEN
 ```python
     api.update_user_token(user_token)
 ```
-- ### Shows user permissions
+- ### Shows USER permissions
 ```python
     api.show_user_permissions()
 ```
+## Client commands:
 - ### Get clients list
 ```python
     clients_data_list = api.get_clients_data()
@@ -99,7 +100,7 @@ The code added `httpx` package to send requests into **YCLIENTS API** and `ujson
 ```python
     all_clients_ids = list(df['id'])
 ```
-- ### Show all visits for client with cid
+- ### Show all visits for client with Client_ID
 ```python
     cid = 20419758
     client_visits = api.get_visits_for_client(cid)
@@ -113,19 +114,19 @@ The code added `httpx` package to send requests into **YCLIENTS API** and `ujson
         print(f'Client {cid} visits')
         print(f'{pd.DataFrame(all_clients_visits[cid])}')
 ```
-- ### Show all attended visits for client with cid
+- ### Show all attended visits for client with Client_ID
 ```python
     cid = 20419758
     client_visits = api.get_attended_visits_for_client(cid)
     print(f'Client {cid} attended visits')
     print(f'{pd.DataFrame(client_visits)}')
 ```
-- ### show attended visits information for clients:
+- ### Show attended visits information for clients:
 ```python
     df = api.get_attended_visits_dates_information(all_clients_ids)
     print(f'Attended visits dataframe: {df}')
 ```
-- ### show attended visits information for clients with at least one visit:
+- ### Show attended visits information for clients with at least one visit:
 ```python
     print(f"Attended visits ndataframe with no gaps {df[df['visits_number']>0]}")
 ```
