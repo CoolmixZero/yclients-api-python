@@ -1,7 +1,7 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 # YCLIENTS API on PYTHON
 
-**Python YCLIENTS API wrapper with ujson and httpx packages**
+**[Python YCLIENTS API wrapper](https://github.com/CoolmixZero/yclients-api-python/blob/main/yclients.py "Opens yclients.py") with ujson and httpx packages**
 
 This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
 
