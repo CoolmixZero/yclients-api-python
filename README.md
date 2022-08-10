@@ -1,7 +1,7 @@
 # YCLIENTS API on PYTHON
 Python Yclients API wrapper with ujson and httpx packages.
 
-#3776AB
+https://simpleicons.org/icons/python.svg
 
 This is an updated version of this project: https://github.com/Stayermax/Python-Yclients-API
 
