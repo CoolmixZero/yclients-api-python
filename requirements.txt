@@ -1,0 +1,7 @@
+# Python version >= 3.7
+# Otherwise: Python version > 3.0 -> import requests, json | instead of -> import https, ujson
+httpx
+ujson
+time
+datetime
+pandas >= 1.0.0
