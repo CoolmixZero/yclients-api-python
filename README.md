@@ -39,6 +39,8 @@ ____
     staff_id = all_staff['data'].get('id')
 ```
 
+---
+
 <details>
 <summary>Output ...</summary>
     
@@ -85,6 +87,8 @@ ____
 ```
     
 </details>
+
+---
 
 - ### Get services info
 ```python
