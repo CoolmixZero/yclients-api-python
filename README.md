@@ -32,7 +32,7 @@ api.show_debugging()
 ```
 ## Booking commands:
 - ### Get staff info
-  > Return list of staff for specific service and date
+  > Returns list of staff for specific service and date
 ```python
 all_staff = api.get_staff()
 print(all_staff)
@@ -92,7 +92,7 @@ ____
 ____
 
 - ### Get services info
-  > Return list of services for specific staff and date
+  > Returns list of services for specific staff and date
 ```python
 services = api.get_services(staff_id=staff_id)
 print(services)
@@ -168,7 +168,7 @@ ____
 ____
 
 - ### Get booking dates
-  > Return all available days for specific staff and service
+  > Returns all available days for specific staff and service
 ```python
 booking_days = api.get_available_days(staff_id=staff_id, service_id=service_id)
 print(booking_days)
@@ -323,7 +323,7 @@ ____
 ____
 
 - ### Get booking times
-  > Return all available times slots on specific day staff and service
+  > Returns all available times slots on specific day staff and service
 ```python
 time_slots = api.get_available_times(staff_id=staff_id, service_id=service_id, day=day)
 print(time_slots)
@@ -466,7 +466,7 @@ ____
 
 ## User commands:
 - ### Get USER TOKEN from the system
-> You can save this TOKEN (like BEARER TOKEN) and there is no need to update it every time
+  > You can save this TOKEN (like BEARER TOKEN) and there is no need to update it every time
 ```python
 login = "example@gmail.com"
 password = "password"
@@ -496,6 +496,7 @@ ____
 ____
 
 - ### Update autorisation parameters of the API class with USER TOKEN
+  > After user token was obtained you need to include it in header of requests that you are sending
 ```python
 api.update_user_token(user_token)
 ```
@@ -779,6 +780,7 @@ ____
 
 ## Client commands:
 - ### Get clients list
+  > Yclients api can't return all clients at once and returns in groups of maximum size of 200. Those groups are called pages and you can choose how many clients it will return
 ```python
 clients_data_list = api.get_clients_data()
 ```
@@ -796,6 +798,7 @@ all_clients_ids = list(df['id'])
 ```
 ## Visits commands:
 - ### Show all visits for client with Client_ID
+  > Yclients api can't return all visits at once and returns in groups of maximum size of 200. Those groups are called pages and you can choose how many visits it will return
 ```python
 cid = 20419758
 client_visits = api.get_visits_for_client(cid)
@@ -810,6 +813,11 @@ for cid in all_clients_visits.keys():
     print(f'{pd.DataFrame(all_clients_visits[cid])}')
 ```
 - ### Show all attended visits for client with Client_ID
+  > Attendance explanation from Yclient API:
+           - 2 - The user has confirmed the entry,
+           - 1 - The user has arrived, the services are provided,
+           - 0 - the user is waiting,
+           - -1 - the user did not come for a visit
 ```python
 cid = 20419758
 client_visits = api.get_attended_visits_for_client(cid)
