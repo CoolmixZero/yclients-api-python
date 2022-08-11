@@ -814,10 +814,10 @@ for cid in all_clients_visits.keys():
 ```
 - ### Show all attended visits for client with Client_ID
   > Attendance explanation from Yclient API:
-    ++ 2 - The user has confirmed the entry,
-    ++ 1 - The user has arrived, the services are provided,
-    ++ 0 - the user is waiting,
-    ++ -1 - the user did not come for a visit
+  >> 2 - The user has confirmed the entry,
+  >>> 1 - The user has arrived, the services are provided,
+  >>>> 0 - the user is waiting,
+  >>>>> -1 - the user did not come for a visit
 ```python
 cid = 20419758
 client_visits = api.get_attended_visits_for_client(cid)
