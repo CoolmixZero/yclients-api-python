@@ -409,7 +409,7 @@ ____
 </details>
 
 <details>
-<summary>Payload(json) example ...</summary>
+<summary>Payload(JSON) example ...</summary>
     
 ```json
 {
