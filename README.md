@@ -32,7 +32,7 @@ api.show_debugging()
 ```
 ## Booking commands:
 - ### Get staff info
-  > Return dict with info about specific staff
+  > Return list of staff for specific service and date
 ```python
 all_staff = api.get_staff()
 print(all_staff)
@@ -92,6 +92,7 @@ ____
 ____
 
 - ### Get services info
+  > Return list of services for specific staff and date
 ```python
 services = api.get_services(staff_id=staff_id)
 print(services)
@@ -167,6 +168,7 @@ ____
 ____
 
 - ### Get booking dates
+  > Return all available days for specific staff and service
 ```python
 booking_days = api.get_available_days(staff_id=staff_id, service_id=service_id)
 print(booking_days)
@@ -321,6 +323,7 @@ ____
 ____
 
 - ### Get booking times
+  > Return all available times slots on specific day staff and service
 ```python
 time_slots = api.get_available_times(staff_id=staff_id, service_id=service_id, day=day)
 print(time_slots)
