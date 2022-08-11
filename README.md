@@ -6,7 +6,7 @@
 - This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
 
 - The code changed `httpx ⟵ requests` and `ujson ⟵ json` packages.
-> `ujson` and `httpx` **faster** than `json` and `requests`
+  > `ujson` and `httpx` **faster** than `json` and `requests`
 
 - An example of using library also implemented in the [example.py](https://github.com/CoolmixZero/yclients-api-python/blob/main/example.py "Opens example.py").
 
@@ -32,7 +32,7 @@ api.show_debugging()
 ```
 ## Booking commands:
 - ### Get staff info
-- > Return dict with info about specific staff
+  > Return dict with info about specific staff
 ```python
 all_staff = api.get_staff()
 print(all_staff)
