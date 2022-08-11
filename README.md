@@ -42,7 +42,7 @@ staff_id = all_staff['data'].get('id')
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
@@ -101,7 +101,7 @@ service_id = services['data']['services'].get('id')
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
@@ -176,7 +176,7 @@ day = booking_days['data'].get('booking_dates')  # or .get('booking_days')
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
@@ -330,7 +330,7 @@ date_time = time_slots['data'].get('time')  # or .get('datetime')
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
@@ -385,7 +385,31 @@ booked, message = api.book(booking_id=0,
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
+    
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "record_id": 2820023,
+      "record_hash": "567df655304da9b98487769426d4e76e"
+    },
+    {
+      "id": 2,
+      "record_id": 2820024,
+      "record_hash": "34a45ddabdd446d5d33bdd27fbf855b2"
+    }
+  ],
+  "meta": []
+}
+```
+    
+</details>
+
+<details>
+<summary>Payload(json) example ...</summary>
     
 ```json
 {
@@ -434,7 +458,6 @@ ____
 ```
     
 </details>
-
 ____
 
 ## User commands:
