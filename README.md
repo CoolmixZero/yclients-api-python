@@ -784,6 +784,39 @@ ____
 ```python
 clients_data_list = api.get_clients_data()
 ```
+
+____
+
+<details>
+<summary>Output ...</summary>
+    
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "name": "Петров",
+      "id": 2
+    },
+    {
+      "name": "Сидоров",
+      "id": 3
+    },
+    {
+      "name": "Иванов",
+      "id": 1
+    }
+  ],
+  "meta": {
+    "total_count": 908
+  }
+}
+```
+    
+</details>
+
+____
+
 - ### Parse clients data
 ```python
 df = api.parse_clients_data(clients_data_list)
@@ -805,6 +838,204 @@ client_visits = api.get_visits_for_client(cid)
 print(f'Client {cid} visits')
 print(f'{pd.DataFrame(client_visits)}')
 ```
+
+____
+
+<details>
+<summary>Output ...</summary>
+    
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 2,
+      "company_id": 4564,
+      "staff_id": 9,
+      "services": [
+        {
+          "id": 1,
+          "title": "Наращивание волос",
+          "cost": 100,
+          "manual_cost": 100,
+          "cost_per_unit": 100,
+          "discount": 0,
+          "first_cost": 100,
+          "amount": 1
+        }
+      ],
+      "goods_transactions": [],
+      "staff": {
+        "id": 9,
+        "name": "Оксана",
+        "specialization": "наращивание волос",
+        "position": {
+          "id": 1,
+          "title": "Администратор"
+        },
+        "avatar": "http://yclients.com/images/no-master-sm.png",
+        "avatar_big": "http://yclients.com/images/no-master.png",
+        "rating": 0,
+        "votes_count": 0
+      },
+      "date": 1547654400,
+      "datetime": 1547622000,
+      "create_date": "2019-01-16T20:35:11+0900",
+      "comment": "не записывать",
+      "online": false,
+      "visit_attendance": 0,
+      "attendance": 0,
+      "confirmed": 1,
+      "seance_length": 3600,
+      "length": 3600,
+      "sms_before": 0,
+      "sms_now": 0,
+      "sms_now_text": "",
+      "email_now": 0,
+      "notified": 0,
+      "master_request": 0,
+      "api_id": "",
+      "from_url": "",
+      "review_requested": 0,
+      "visit_id": "8262996",
+      "created_user_id": 1073232,
+      "deleted": false,
+      "paid_full": 0,
+      "prepaid": false,
+      "prepaid_confirmed": false,
+      "last_change_date": "2019-01-16T20:35:15+0900",
+      "custom_color": "",
+      "custom_font_color": "",
+      "record_labels": [],
+      "activity_id": 0,
+      "custom_fields": [],
+      "documents": [
+        {
+          "id": 8172893,
+          "type_id": 7,
+          "storage_id": 0,
+          "user_id": 746310,
+          "company_id": 4564,
+          "number": 4163,
+          "comment": "",
+          "date_created": 1530615600,
+          "category_id": 0,
+          "visit_id": 3,
+          "record_id": 2,
+          "type_title": "Визит"
+        }
+      ],
+      "sms_remain_hours": 5,
+      "email_remain_hours": 1,
+      "bookform_id": 0,
+      "record_from": "",
+      "is_mobile": 0,
+      "is_sale_bill_printed": false,
+      "consumables": [],
+      "finance_transactions": []
+    },
+    {
+      "id": 9,
+      "company_id": 4564,
+      "staff_id": 49,
+      "services": [],
+      "goods_transactions": [],
+      "staff": {
+        "id": 49,
+        "name": "Сергей",
+        "specialization": "стилист",
+        "position": {
+          "id": 1,
+          "title": "Администратор"
+        },
+        "avatar": "http://yclients.com/images/no-master-sm.png",
+        "avatar_big": "http://yclients.com/images/no-master.png",
+        "rating": 0,
+        "votes_count": 0
+      },
+      "date": 1547654400,
+      "datetime": 1547622000,
+      "create_date": "2019-01-16T20:35:11+0900",
+      "comment": "",
+      "online": true,
+      "visit_attendance": 1,
+      "attendance": 1,
+      "confirmed": 1,
+      "seance_length": 10800,
+      "length": 10800,
+      "sms_before": 0,
+      "sms_now": 0,
+      "sms_now_text": "",
+      "email_now": 0,
+      "notified": 0,
+      "master_request": 1,
+      "api_id": "",
+      "from_url": "",
+      "review_requested": 0,
+      "visit_id": "8262996",
+      "created_user_id": 1073232,
+      "deleted": false,
+      "paid_full": 0,
+      "prepaid": false,
+      "prepaid_confirmed": false,
+      "last_change_date": "2017-01-09T20:45:30+0900",
+      "custom_color": "f44336",
+      "custom_font_color": "#ffffff",
+      "record_labels": [
+        {
+          "id": "67345",
+          "title": "Сотрудник не важен",
+          "color": "#009800",
+          "icon": "unlock",
+          "font_color": "#ffffff"
+        },
+        {
+          "id": "104474",
+          "title": "важная категория",
+          "color": "#3b2c54",
+          "icon": "odnoklassniki",
+          "font_color": "#ffffff"
+        }
+      ],
+      "activity_id": 0,
+      "custom_fields": [],
+      "documents": [
+        {
+          "id": 8172893,
+          "type_id": 7,
+          "storage_id": 0,
+          "user_id": 746310,
+          "company_id": 4564,
+          "number": 4163,
+          "comment": "",
+          "date_created": 1530615600,
+          "category_id": 0,
+          "visit_id": 3,
+          "record_id": 2,
+          "type_title": "Визит"
+        }
+      ],
+      "sms_remain_hours": 5,
+      "email_remain_hours": 1,
+      "bookform_id": 0,
+      "record_from": "",
+      "is_mobile": 0,
+      "is_sale_bill_printed": false,
+      "consumables": [],
+      "finance_transactions": []
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "total_count": 10
+  }
+}
+```
+    
+</details>
+
+____
+
 - ### Show all visits for all clients
 ```python
 all_clients_visits = api.get_visits_data_for_clients_list(all_clients_ids)
