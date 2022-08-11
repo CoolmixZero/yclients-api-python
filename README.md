@@ -496,7 +496,7 @@ ____
 ____
 
 - ### Update autorisation parameters of the API class with USER TOKEN
-  > After user token was obtained you need to include it in header of requests that you are sending
+  > After USER TOKEN was obtained you need to include it in header of requests that you are sending
 ```python
 api.update_user_token(user_token)
 ```
@@ -780,7 +780,7 @@ ____
 
 ## Client commands:
 - ### Get clients list
-  > Yclients api can't return all clients at once and returns in groups of maximum size of 200. Those groups are called pages and you can choose how many clients it will return
+  > YCLIENTS API can't return all clients at once and returns in groups of **maximum size of 200**. Those groups are called pages and you can choose how many clients it will return
 ```python
 clients_data_list = api.get_clients_data()
 ```
@@ -798,7 +798,7 @@ all_clients_ids = list(df['id'])
 ```
 ## Visits commands:
 - ### Show all visits for client with Client_ID
-  > Yclients api can't return all visits at once and returns in groups of maximum size of 200. Those groups are called pages and you can choose how many visits it will return
+  > YCLIENTS API can't return all visits at once and returns in groups of **maximum size of 200**. Those groups are called pages and you can choose how many visits it will return
 ```python
 cid = 20419758
 client_visits = api.get_visits_for_client(cid)
@@ -814,10 +814,10 @@ for cid in all_clients_visits.keys():
 ```
 - ### Show all attended visits for client with Client_ID
   > Attendance explanation from Yclient API:
-           - 2 - The user has confirmed the entry,
-           - 1 - The user has arrived, the services are provided,
-           - 0 - the user is waiting,
-           - -1 - the user did not come for a visit
+-- 2 - The user has confirmed the entry,
+-- 1 - The user has arrived, the services are provided,
+-- 0 - the user is waiting,
+-- -1 - the user did not come for a visit
 ```python
 cid = 20419758
 client_visits = api.get_attended_visits_for_client(cid)
