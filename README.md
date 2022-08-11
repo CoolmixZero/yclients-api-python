@@ -477,7 +477,7 @@ user_token = api.get_user_token(login, password)
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
@@ -504,7 +504,7 @@ api.update_user_token(user_token)
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
@@ -528,7 +528,7 @@ api.show_user_permissions()
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
@@ -788,7 +788,7 @@ clients_data_list = api.get_clients_data()
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
@@ -842,7 +842,7 @@ print(f'{pd.DataFrame(client_visits)}')
 ____
 
 <details>
-<summary>Output ...</summary>
+<summary>Response ...</summary>
     
 ```json
 {
