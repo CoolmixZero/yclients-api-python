@@ -32,6 +32,7 @@ api.show_debugging()
 ```
 ## Booking commands:
 - ### Get staff info
+- > Return dict with info about specific staff
 ```python
 all_staff = api.get_staff()
 print(all_staff)
