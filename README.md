@@ -3,6 +3,13 @@
 
 # YCLIENTS API ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7+-blue) 
 
+**This is non-official YCLIENTS API wrapper.**  
+
+
+This wrapper sends request to API and returns JSON with information of needed element.  Also `requests` and `json` packages where changed to `httpx` and `ujson`.
+
+> Python 3.7+ required
+
 ### **Python [YCLIENTS API WRAPPER](https://github.com/CoolmixZero/yclients-api-python/blob/main/yclients.py "Opens yclients.py") with [ujson](https://pypi.org/project/ujson/ "Opens ujson documentation") and [httpx](https://www.python-httpx.org/ "Opens httpx documentation") packages:**
 
 - This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
