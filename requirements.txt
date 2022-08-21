@@ -1,7 +1,8 @@
 # Python version >= 3.7
 # Otherwise: Python version > 3.0 -> import requests, json | instead of -> import https, ujson
-httpx
-ujson
-time
-datetime
-pandas >= 1.0.0
+aiogram==2.21
+httpx==0.23.0
+instaloader==4.9.2
+pandas==1.4.3
+pendulum==2.1.2
+ujson==5.4.0
