@@ -1,5 +1,5 @@
 # Python version >= 3.7
-# Otherwise: Python version > 3.0 -> import requests, json | instead of -> import https, ujson
+# Otherwise: Python version > 3.0 -> pip install requests, json | instead of -> pip install https, ujson
 aiogram==2.21
 httpx==0.23.0
 instaloader==4.9.2
