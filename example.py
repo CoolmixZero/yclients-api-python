@@ -43,7 +43,7 @@ if __name__ == '__main__':
     booked, message = api.book(booking_id=0, 
                            fullname='my name', 
                            phone='53425345', 
-                           email='myemail@email.com, 
+                           email='myemail@email.com', 
                            service_id=service_id, 
                            date_time=date_time, 
                            staff_id=staff_id, 
