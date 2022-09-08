@@ -1,6 +1,8 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Last Commit](https://img.shields.io/github/last-commit/CoolmixZero/yclients-api-python?style=for-the-badge)
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/ujson.svg?logo=pypi&logoColor=FFE873)](https://pypi.org/project/ujson)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/ujson.svg?logo=python&logoColor=FFE873)](https://pypi.org/project/ujson)
 
 # YCLIENTS API ![https://img.shields.io/badge/Python-3.7.5-blue](https://img.shields.io/badge/Python-3.7+-blue) [![Tests Passing](https://github.com/CoolmixZero/yclients-api-python/actions/workflows/python-package.yml/badge.svg)](https://github.com/CoolmixZero/yclients-api-python/actions)
 
