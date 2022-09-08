@@ -2,7 +2,10 @@
 ![Last Commit](https://img.shields.io/github/last-commit/CoolmixZero/yclients-api-python?style=for-the-badge)
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 
-# YCLIENTS API [![PyPI version](https://img.shields.io/pypi/v/yclients-api.svg?logo=pypi&logoColor=FFE873)](https://pypi.org/project/yclients-api) [![Supported Python versions](https://img.shields.io/pypi/pyversions/yclients-api.svg?logo=python&logoColor=FFE873)](https://pypi.org/project/yclients-api) [![Tests Passing](https://github.com/CoolmixZero/yclients-api-python/actions/workflows/python-package.yml/badge.svg)](https://github.com/CoolmixZero/yclients-api-python/actions)
+# YCLIENTS API 
+[![PyPI version](https://img.shields.io/pypi/v/yclients-api.svg?logo=pypi&logoColor=FFE873)](https://pypi.org/project/yclients-api)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/yclients-api.svg?logo=python&logoColor=FFE873)](https://pypi.org/project/yclients-api)
+[![Tests Passing](https://github.com/CoolmixZero/yclients-api-python/actions/workflows/python-package.yml/badge.svg)](https://github.com/CoolmixZero/yclients-api-python/actions)
 
 ### **Python [YCLIENTS API WRAPPER](https://github.com/CoolmixZero/yclients-api-python/blob/main/yclients/yclients.py "Opens yclients.py") with [ujson](https://pypi.org/project/ujson/ "Opens ujson documentation") and [httpx](https://www.python-httpx.org/ "Opens httpx documentation") packages:**
 - PyPI page of project: https://pypi.org/project/yclients-api/
