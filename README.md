@@ -20,7 +20,7 @@
 > Please note that sending requests to get customer data can take time, especially if your database is quite large, since YCLIENTS API can return only 200 results at once. Also if sending one request takes more than a few seconds, you may need to connect to another Internet network.
 > 
 # Installation:
-```shell
+```console
 pip install yclients-api
 ```
 ____
