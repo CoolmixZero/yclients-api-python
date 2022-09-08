@@ -6,7 +6,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/yclients-api.svg?logo=pypi&logoColor=FFE873)](https://pypi.org/project/yclients-api)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/yclients-api.svg?logo=python&logoColor=FFE873)](https://pypi.org/project/yclients-api)
 [![Tests Passing](https://github.com/CoolmixZero/yclients-api-python/actions/workflows/python-package.yml/badge.svg)](https://github.com/CoolmixZero/yclients-api-python/actions)
-[![PyPI downloads](https://img.shields.io/pypi/dm/yclients-api?style=flat-square)]
+[![PyPI downloads](https://img.shields.io/pypi/dm/yclients-api.svg?style=flat-square)](https://pypi.org/project/yclients-api)
 
 ### **Python [YCLIENTS API WRAPPER](https://github.com/CoolmixZero/yclients-api-python/blob/main/yclients/yclients.py "Opens yclients.py") with [ujson](https://pypi.org/project/ujson/ "Opens ujson documentation") and [httpx](https://www.python-httpx.org/ "Opens httpx documentation") packages:**
 - PyPI page of project: https://pypi.org/project/yclients-api/
