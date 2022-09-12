@@ -1,1 +1,1 @@
-from yclients import YClientsAPI
+from .yclients import YClientsAPI
