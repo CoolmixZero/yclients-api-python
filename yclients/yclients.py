@@ -29,7 +29,7 @@ class YClientsAPI:
 
     def book(self, booking_id: int, fullname: str, phone: str, email: str, staff_id: int,
              date_time: str | datetime.datetime,
-             service_id: int = None, comment: str = None) -> (True, '') or (False, Exception):
+             service_id: int = None, comment: str = None) -> (True, None) or (False, Exception):
         """ Make booking """
         url = "https://n{}.yclients.com/api/v1/book_record/{}/".format(self.form_id, self.company_id)
         payload = {
