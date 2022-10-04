@@ -10,7 +10,6 @@
 
 ### **Python [YCLIENTS API WRAPPER](https://github.com/CoolmixZero/yclients-api-python/blob/main/yclients/yclients.py "Opens yclients.py") with [ujson](https://pypi.org/project/ujson/ "Opens ujson documentation") and [httpx](https://www.python-httpx.org/ "Opens httpx documentation") packages:**
 - PyPI page of project: https://pypi.org/project/yclients-api/
-- This is an **updated version** of this project: https://github.com/Stayermax/Python-Yclients-API
 
 - The code changed `httpx ⟵ requests` and `ujson ⟵ json` packages.
   > `ujson` and `httpx` **faster** than `json` and `requests`
