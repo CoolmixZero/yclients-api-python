@@ -33,7 +33,7 @@ TOKEN = "your token"
 СID = 'your company id'
 FID = 'form id'
 
-api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID, debug=True)
+api = YClientsAPI(token=TOKEN, company_id=СID, form_id=FID)
 ```
 ## Show debugging process
 ```python
